@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "next typegen && tsc --noEmit",
     "record-demo": "node scripts/record-demo.mjs",
     "demo:voice": "python3 demo/narrate.py",
     "demo:record": "node demo/record.mjs",

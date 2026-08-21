@@ -296,7 +296,7 @@ be able to say no, but it does not need to be theatrical about it.
 npm run dev        # development server
 npm run build      # production build
 npm run lint       # eslint
-npm run typecheck  # tsc --noEmit
+npm run typecheck  # next typegen && tsc --noEmit
 npm run test       # vitest
 ```
 
