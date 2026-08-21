@@ -1,26 +1,297 @@
 @import "tailwindcss";
 
+/* ------------------------------------------------------------------ */
+/* Design tokens                                                       */
+/*                                                                     */
+/* Parchment, deep pine and antique gold. The gold is deliberately     */
+/* olive-leaning and used sparingly — hairlines, seals, small accents  */
+/* — so the palette reads heritage rather than high-vis.               */
+/* ------------------------------------------------------------------ */
+
+@theme {
+  --color-paper: #faf8f1;
+  --color-paper-raised: #fffefa;
+  --color-paper-sunken: #f1eee2;
+
+  --color-ink: #0d2a1e;
+  --color-ink-muted: #46614f;
+  --color-ink-subtle: #7c9184;
+
+  --color-line: #e5e0ce;
+  --color-line-strong: #d3ccb2;
+
+  --color-forest: #0c3b2a;
+  --color-forest-deep: #06231a;
+  --color-forest-mid: #114b36;
+
+  --color-emerald-brand: #16794f;
+  --color-emerald-bright: #1e9a66;
+  --color-emerald-soft: #e7f2ea;
+
+  --color-gold: #c0982a;
+  --color-gold-bright: #e0bc55;
+  --color-gold-deep: #7e6212;
+  --color-gold-soft: #f8f0d6;
+
+  --color-clay: #9a3b2c;
+  --color-clay-bright: #c2543f;
+  --color-clay-soft: #f7eae6;
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--color-paper);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body > main,
+body > footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* Warm field with two soft washes and a fine grain, so large parchment
+   areas never look like flat #fff. */
+.lp-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-color: var(--color-paper);
+  /* One soft wash. Texture and competing glows were ornament, not clarity. */
+  background-image: radial-gradient(
+    58rem 36rem at 50% -14%,
+    rgba(22, 121, 79, 0.07),
+    transparent 68%
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/* Typographic furniture                                               */
+/* ------------------------------------------------------------------ */
+
+.lp-display {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.014em;
+  font-variation-settings: "SOFT" 20, "WONK" 0;
+}
+
+.lp-eyebrow {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* Hairline flanked by a gold diamond — the recurring section mark. */
+.lp-rule {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.lp-rule::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(
+    to right,
+    var(--color-line-strong),
+    color-mix(in srgb, var(--color-gold) 35%, transparent) 30%,
+    transparent
+  );
+}
+
+.lp-seal {
+  background-image: linear-gradient(
+    135deg,
+    var(--color-gold-bright),
+    var(--color-gold) 45%,
+    var(--color-gold-deep)
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/* Dossier                                                             */
+/*                                                                     */
+/* The results page is a printed case file, not a dashboard: ruled     */
+/* registers instead of card grids, column-set body copy, an inked     */
+/* verdict stamp, and annotations in the margin.                       */
+/* ------------------------------------------------------------------ */
+
+.lp-dropcap::first-letter {
+  font-family: var(--font-display);
+  font-weight: 600;
+  float: left;
+  font-size: 3.1em;
+  line-height: 0.82;
+  padding: 0.06em 0.09em 0 0;
+  color: var(--color-forest);
+}
+
+.lp-columns {
+  column-count: 2;
+  column-gap: 3.5rem;
+  text-wrap: pretty;
+}
+
+@media (max-width: 767px) {
+  .lp-columns {
+    column-count: 1;
+    column-rule: none;
+  }
+}
+
+/* Ruled register: rows separated by hairlines, numbered in the margin. */
+.lp-register > * + * {
+  border-top: 1px solid var(--color-line);
+}
+
+.lp-margin-note {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--color-ink-subtle);
+}
+
+/* Perforated edge, like a torn page. */
+.lp-perforated {
+  border-top: 1px dashed var(--color-line-strong);
+}
+
+.lp-file-edge {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    var(--color-line-strong) 0 6px,
+    transparent 6px 14px
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/* Motion                                                              */
+/* ------------------------------------------------------------------ */
+
+@keyframes lp-rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.lp-rise {
+  animation: lp-rise 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes lp-sweep {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(320%);
+  }
+}
+
+.lp-sweep::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 30%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--color-gold) 45%, transparent),
+    transparent
+  );
+  animation: lp-sweep 1.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lp-rise,
+  .lp-sweep::after {
+    animation: none;
+  }
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-gold) 40%, transparent);
+  color: var(--color-forest-deep);
+}
+
+.lp-scrollbar::-webkit-scrollbar {
+  height: 7px;
+  width: 7px;
+}
+.lp-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-line-strong);
+  border-radius: 9999px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Print — the case file is meant to survive being handed over on paper */
+/* ------------------------------------------------------------------ */
+
+@page {
+  margin: 16mm 14mm;
+}
+
+@media print {
+  .lp-backdrop,
+  .lp-no-print {
+    display: none !important;
+  }
+
+  html,
+  body {
+    background: #fff;
+    color: #10231a;
+  }
+
+  /* Keep the stamp and the rules inked rather than dropped by the driver. */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .lp-rise {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Never split a finding, an exhibit or an order across a page. */
+  section,
+  .lp-register > *,
+  blockquote,
+  table tr {
+    break-inside: avoid;
+  }
+
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }

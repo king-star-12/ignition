@@ -32,6 +32,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel
@@ -39,3 +40,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# saved reports written by lib/store.ts
+.data/
+
+# rendered demo film (rebuild with: npm run demo:video)
+*.mp4
+demo/frames/
+demo/clips/
+demo/audio/

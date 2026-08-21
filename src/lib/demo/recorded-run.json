@@ -1,0 +1,499 @@
+{
+  "mode": "validate",
+  "analysis": {
+    "idea": "AI meal planner for Indian families that creates weekly home‑cooked menus, respects vegetarian and regional preferences, and outputs a grocery list",
+    "problem": "Indian families often struggle to plan balanced weekly meals that meet diverse dietary habits and generate accurate shopping lists",
+    "targetCustomer": "Indian households, especially those with mixed vegetarian/vegan preferences and regional cuisine traditions",
+    "proposedSolution": "A web or mobile app that uses AI to generate a week’s worth of Indian recipes tailored to regional and vegetarian constraints and automatically creates a consolidated grocery list",
+    "category": "FoodTech / Consumer Apps",
+    "keywords": [
+      "indian meal planner",
+      "ai recipe generator",
+      "vegetarian Indian recipes",
+      "regional Indian cuisine app",
+      "grocery list automation"
+    ],
+    "nameSuggestions": [
+      "mealraas",
+      "spiceplan",
+      "kitchenmuse",
+      "tiffinai",
+      "rasoiwise"
+    ],
+    "competitorSearchQueries": [
+      "indian meal planning app",
+      "ai recipe generator india"
+    ],
+    "marketSearchQueries": [
+      "india home cooking market size",
+      "online grocery and meal planning trends india"
+    ],
+    "customerPainSearchQueries": [
+      "reddit indian cooking meal planning problems",
+      "facebook groups indian home cooking challenges"
+    ],
+    "initialHypotheses": [
+      "Indian families are willing to use an AI‑driven app for weekly meal planning",
+      "There is currently no product that combines regional Indian recipe customization with automated grocery lists",
+      "Users find existing Indian recipe apps lacking in vegetarian and regional specificity",
+      "A grocery list generated from AI‑selected recipes reduces shopping time for Indian households",
+      "AI can accurately predict portion sizes for typical Indian family meals"
+    ]
+  },
+  "evidence": {
+    "results": [
+      {
+        "title": "Show HN: FinBodhi – Local-first, double-entry app/PWA for your financial journey",
+        "url": "https://finbodhi.com/",
+        "snippet": "We built a local-first, private, multi-currency, double-entry based personal finance app. It will help you track, visualize, and plan your financial journey. Use the `Try demo` button, to try it without an account. Small screens (mobiles) a",
+        "source": "finbodhi.com",
+        "category": "competitors",
+        "query": "indian meal planning app"
+      },
+      {
+        "title": "Ask HN: Advice for seed-stage startup funding firm in India",
+        "url": "https://news.ycombinator.com/item?id=967499",
+        "snippet": "HN Folks,I am reposting this thread from http://news.ycombinator.com/item?id=964957I am looking your thoughts on what all went right with YC, other than PG and team being there. I mean I see a lot of potential in India. A lot of good talent",
+        "source": "news.ycombinator.com",
+        "category": "competitors",
+        "query": "indian meal planning app"
+      },
+      {
+        "title": "AI Recipe Generator by DishGen | Create AI Recipes & Meal ...",
+        "url": "https://www.dishgen.com/",
+        "snippet": "DishGen is the revolutionary AI recipe generator. Input your ingredients and preferences, and our recipe generator will craft unique AI recipes on demand.",
+        "source": "DishGen",
+        "category": "competitors",
+        "query": "ai recipe generator india"
+      },
+      {
+        "title": "Food Mood India Edition",
+        "url": "https://artsandculture.google.com/experiment/food-mood-india-edition/KgGKNg0KNsDS0A?hl=en",
+        "snippet": "This playful fusion recipe generator creates unique recipes inspired by cuisines of different Indian states with the help of Google AI.",
+        "source": "Google Arts & Culture",
+        "category": "competitors",
+        "query": "ai recipe generator india"
+      },
+      {
+        "title": "AI-powered Indian Recipe Generator",
+        "url": "https://recipegpt.io/ai-recipe-generator/indian",
+        "snippet": "Create delicious, healthy, and treditional indian recipes based on the ingredients you have at home. Simply pick any dish you want, and our AI will generate a",
+        "source": "recipeGPT",
+        "category": "competitors",
+        "query": "ai recipe generator india"
+      },
+      {
+        "title": "taljindergill78/AI-Indian-Recipe-Generator",
+        "url": "https://github.com/taljindergill78/AI-Indian-Recipe-Generator",
+        "snippet": "Fine-tune a large language model to generate culturally authentic Indian recipes given a dish name, diet type, and regional cuisine.",
+        "source": "GitHub",
+        "category": "competitors",
+        "query": "ai recipe generator india"
+      },
+      {
+        "title": "Cooking with an AI Recipe Generator! | Twisted",
+        "url": "https://www.youtube.com/watch?v=J1WPJvSIga4",
+        "snippet": "Watch as we put an AI recipe generator to the test! Can it create a tasty dish with kale, bananas, and chicken? AI compares to a human-made ...",
+        "source": "YouTube · Twisted",
+        "category": "competitors",
+        "query": "ai recipe generator india"
+      },
+      {
+        "title": "India Ready To Cook Market Size 2026-2030",
+        "url": "https://www.technavio.com/report/ready-to-cook-market-in-india-industry-analysis",
+        "snippet": "India Ready To Cook Market size is expected to grow by USD 718.4 million from 2026-2030 expanding at a CAGR of 8.3% during the forecast period.",
+        "source": "Technavio",
+        "category": "market",
+        "query": "india home cooking market size"
+      },
+      {
+        "title": "India Ready-to-Cook Food Market",
+        "url": "https://www.techsciresearch.com/report/india-ready-to-cook-food-market/16958.html",
+        "snippet": "Ready-to-Cook Food Market in India was valued at USD 624.18 Million in 2024 and is expected to reach USD 1546.81 Million by 2030 with a CAGR of 16.41% ...",
+        "source": "TechSci Research",
+        "category": "market",
+        "query": "india home cooking market size"
+      },
+      {
+        "title": "Ready-to-Eat Meals - India | Statista Market Forecast",
+        "url": "https://www.statista.com/outlook/emo/food/convenience-food/ready-to-eat-meals/india/?srsltid=AfmBOopZ4C64ICHs24rATtAeAJ-FAk7F6cV_ZIHuhkTUvBNtQ-pPCnt4",
+        "snippet": "India: Revenue in the Ready-to-Eat Meals Market is projected to reach US$****bn in ****. Definition: The eCommerce Ready-to-Eat Meals market refers to the ...",
+        "source": "Statista",
+        "category": "market",
+        "query": "india home cooking market size"
+      },
+      {
+        "title": "India Ready-to-Cook Food Market Size, Share | Growth 2034",
+        "url": "https://www.imarcgroup.com/india-ready-to-cook-food-market",
+        "snippet": "The India ready-to-cook food market size valued at USD 7.1 billion in 2025, is projected to reach USD 12.0 billion, at a CAGR of 5.86% during 2026-2034.",
+        "source": "IMARC Group",
+        "category": "market",
+        "query": "india home cooking market size"
+      },
+      {
+        "title": "India Ready-to-mix Food Market",
+        "url": "https://www.futuremarketinsights.com/reports/global-ready-to-eat-food-market",
+        "snippet": "India Ready-to-mix Food Market was worth USD 0.6 billion in 2025, and is predicted to grow to USD 2.2 billion by 2035, with a CAGR of 14.1%.",
+        "source": "Future Market Insights",
+        "category": "market",
+        "query": "india home cooking market size"
+      },
+      {
+        "title": "India Household Kitchen Appliances Market Size Report ...",
+        "url": "https://www.grandviewresearch.com/industry-analysis/india-household-kitchen-appliances-market-report",
+        "snippet": "The India household kitchen appliances market size was estimated at USD 15.16 billion in 2024 and is projected to reach USD 26.37 billion by 2033, ...",
+        "source": "Grand View Research",
+        "category": "market",
+        "query": "india home cooking market size"
+      },
+      {
+        "title": "India Ready-to-Cook Food Market, By Region, Competition ...",
+        "url": "https://www.researchandmarkets.com/reports/5900277/india-ready-to-cook-food-market-region?srsltid=AfmBOooigSYVKFKds4PtvLsLh9lD74sfxm66AkbXDJvFWKKn-vedMGKv",
+        "snippet": "The India Ready-to-Cook Food Market was valued at USD 0.62 Billion in 2024, and is expected to reach USD 1.54 Billion by 2030, rising at a CAGR of 16.41%.",
+        "source": "Research and Markets",
+        "category": "market",
+        "query": "india home cooking market size"
+      },
+      {
+        "title": "Meal planning ideas for one-time cooking for the day.",
+        "url": "https://www.reddit.com/r/IndianFood/comments/1jkcdm4/meal_planning_ideas_for_onetime_cooking_for_the/",
+        "snippet": "Indian food cannot be made in 1 hour unless you use frozen vegetables, ready made pasted. Mediterranean and middle eastern breakfasts and ...",
+        "source": "Reddit · r/IndianFood",
+        "category": "customer_pain",
+        "query": "reddit indian cooking meal planning problems"
+      },
+      {
+        "title": "Meal-planning for Indian food in the US - r/ABCDesis",
+        "url": "https://www.reddit.com/r/ABCDesis/comments/1mxdx5v/mealplanning_for_indian_food_in_the_us_whats_the/",
+        "snippet": "Hey folks! Mom of 2 here, trying to adopt weekly meal planning. I can’t find an app that handles Indian cooking well in the US context. Why do you think ...",
+        "source": "Reddit · r/ABCDesis",
+        "category": "customer_pain",
+        "query": "reddit indian cooking meal planning problems"
+      },
+      {
+        "title": "How do you guys work and have home made food?",
+        "url": "https://www.reddit.com/r/IndianFood/comments/10q35qf/how_do_you_guys_work_and_have_home_made_food/",
+        "snippet": "I shifted to new city and couldn’t find a good tiffin service. I tried mess food and didn’t liked it either. My question to you guys, how do you all ...",
+        "source": "Reddit · r/IndianFood",
+        "category": "customer_pain",
+        "query": "reddit indian cooking meal planning problems"
+      },
+      {
+        "title": "Meal planning apps in India? : r/IndianFood",
+        "url": "https://www.reddit.com/r/IndianFood/comments/1b3raj6/meal_planning_apps_in_india/",
+        "snippet": "Any recommendations for apps/ websites for meal planning for Indian meals? The daily question from the cook \"Didi aaj khane mein kya banega\" (what ...",
+        "source": "Reddit · r/IndianFood",
+        "category": "customer_pain",
+        "query": "reddit indian cooking meal planning problems"
+      },
+      {
+        "title": "Do you guys have a schedule of what you are going to ...",
+        "url": "https://www.reddit.com/r/IndianFood/comments/1663b23/do_you_guys_have_a_schedule_of_what_you_are_going/",
+        "snippet": "For working professionals,…and busy homemakers,… Do you guys plan it in advance as to what you are going to prepare each day for a whole week? (Assuming ...",
+        "source": "Reddit · r/IndianFood",
+        "category": "customer_pain",
+        "query": "reddit indian cooking meal planning problems"
+      },
+      {
+        "title": "Problems with meal planning : r/MealPrepSunday",
+        "url": "https://www.reddit.com/r/MealPrepSunday/comments/16mr2vz/problems_with_meal_planning/",
+        "snippet": "If I buy fresh stuff to cook a specific meal (or, even worse, ingredients for multiple meals) I am quite paralyzed and struggle very often with ...",
+        "source": "Reddit · r/MealPrepSunday",
+        "category": "customer_pain",
+        "query": "reddit indian cooking meal planning problems"
+      },
+      {
+        "title": "r/IndianCooking",
+        "url": "https://www.reddit.com/r/IndianCooking/",
+        "snippet": "r/IndianCooking: Welcome all foodies of India. Share photos of cooked food you have made or eaten, or photos of other people. Indian cooking is basically ...",
+        "source": "Reddit · r/IndianCooking",
+        "category": "customer_pain",
+        "query": "reddit indian cooking meal planning problems"
+      }
+    ],
+    "queriesRun": [
+      "indian meal planning app",
+      "ai recipe generator india",
+      "india home cooking market size",
+      "online grocery and meal planning trends india",
+      "reddit indian cooking meal planning problems",
+      "facebook groups indian home cooking challenges"
+    ],
+    "totalFound": 46,
+    "deduplicated": 25,
+    "dataSource": "live",
+    "notes": [
+      "5 of 6 searches were served from cache (results under a week old)."
+    ]
+  },
+  "synthesis": {
+    "executiveSummary": "Indian families need a simple way to plan weekly home‑cooked meals that respect regional and vegetarian preferences, and to generate accurate grocery lists. Existing AI recipe tools focus on ingredient input or generic Indian dishes, but none combine full weekly planning with tailored grocery consolidation. A focused app could fill this gap and reduce shopping time for households.",
+    "problem": {
+      "statement": "Indian families struggle to plan balanced weekly meals that meet diverse dietary habits and generate accurate shopping lists",
+      "evidence": [
+        "Reddit user reports difficulty finding an app that handles Indian cooking for weekly planning (https://www.reddit.com/r/ABCDesis/comments/1mxdx5v/mealplanning_for_indian_food_in_the_us_whats_the/)",
+        "Reddit discussion notes limited quick‑cook options for Indian meals, highlighting planning pain (https://www.reddit.com/r/IndianFood/comments/1jkcdm4/meal_planning_ideas_for_onetime_cooking_for_the/)"
+      ]
+    },
+    "competitors": [
+      {
+        "name": "DishGen",
+        "description": "AI recipe generator where users input ingredients and preferences to get on‑demand recipes",
+        "strengths": [
+          "Generates recipes quickly",
+          "Handles ingredient‑based input"
+        ],
+        "weaknesses": [
+          "Not focused on weekly planning or grocery list creation",
+          "May not cover regional Indian cuisines specifically"
+        ],
+        "pricingNote": "",
+        "sourceUrls": [
+          "https://www.dishgen.com/"
+        ]
+      },
+      {
+        "name": "Food Mood India Edition",
+        "description": "Google AI‑powered experiment that creates unique recipes inspired by Indian states",
+        "strengths": [
+          "Leverages Google AI",
+          "Highlights regional diversity"
+        ],
+        "weaknesses": [
+          "Playful experiment, not a full‑featured planning app",
+          "No grocery list functionality"
+        ],
+        "pricingNote": "",
+        "sourceUrls": [
+          "https://artsandculture.google.com/experiment/food-mood-india-edition/KgGKNg0KNsDS0A?hl=en"
+        ]
+      },
+      {
+        "name": "recipeGPT",
+        "description": "AI‑driven Indian recipe generator that creates dishes based on user‑selected ingredients",
+        "strengths": [
+          "AI‑generated Indian recipes",
+          "Simple web interface"
+        ],
+        "weaknesses": [
+          "Focuses on single recipes, not weekly menus or shopping lists"
+        ],
+        "pricingNote": "",
+        "sourceUrls": [
+          "https://recipegpt.io/ai-recipe-generator/indian"
+        ]
+      }
+    ],
+    "marketSignals": [
+      {
+        "signal": "Ready‑to‑cook market in India is projected to grow at double‑digit CAGR through 2030",
+        "interpretation": "Strong consumer appetite for convenient, home‑cooked style meals suggests demand for tools that simplify meal planning and shopping",
+        "confidence": "verified",
+        "sourceUrls": [
+          "https://www.technavio.com/report/ready-to-cook-market-in-india-industry-analysis",
+          "https://www.techsciresearch.com/report/india-ready-to-cook-food-market/16958.html"
+        ]
+      },
+      {
+        "signal": "Ready‑to‑eat meals market revenue is increasing in India",
+        "interpretation": "Broader trend toward convenience foods supports a niche for digital planning solutions that bridge cooking and convenience",
+        "confidence": "inferred",
+        "sourceUrls": []
+      }
+    ],
+    "customerPainPoints": [
+      {
+        "pain": "Lack of apps that handle Indian weekly meal planning, especially for mixed vegetarian/vegan households",
+        "quote": "Can’t find an app that handles Indian cooking well in the US context",
+        "whyItMatters": "Without a dedicated tool, families spend extra time manually curating recipes and shopping lists, leading to inefficiency and inconsistent nutrition",
+        "sourceUrls": []
+      },
+      {
+        "pain": "Difficulty preparing quick Indian meals due to limited ready‑made ingredients",
+        "quote": "Indian food cannot be made in 1 hour unless you use frozen vegetables, ready made paste",
+        "whyItMatters": "Time constraints push families toward ad‑hoc solutions or unhealthy shortcuts",
+        "sourceUrls": []
+      }
+    ],
+    "opportunities": [
+      "Integrate regional cuisine filters (e.g., South Indian, Punjabi)",
+      "Provide vegetarian/vegan‑only menu generation",
+      "Automatically consolidate ingredient quantities across a week to reduce waste",
+      "Offer portion‑size recommendations for typical Indian family sizes",
+      "Sync grocery list with popular Indian e‑commerce platforms"
+    ],
+    "differentiation": [
+      "Full weekly menu generation vs single‑recipe focus",
+      "Regional and dietary customization in one place",
+      "Consolidated grocery list with portion‑size optimization",
+      "Local Indian ingredient database",
+      "Option to export list to Indian grocery delivery services"
+    ],
+    "mvpFeatures": [
+      {
+        "feature": "Weekly menu generator with regional & vegetarian filters",
+        "why": "Addresses core planning pain and differentiates from single‑recipe tools"
+      },
+      {
+        "feature": "Consolidated grocery list with quantity aggregation",
+        "why": "Reduces shopping time and ingredient waste"
+      },
+      {
+        "feature": "Portion‑size estimator for 4‑6 person Indian families",
+        "why": "Ensures recipes meet typical family needs"
+      }
+    ],
+    "monetizationIdeas": [
+      {
+        "model": "Freemium",
+        "detail": "Free basic weekly plan; premium unlocks multiple weeks, advanced portion‑size AI, and grocery‑store integrations",
+        "suggestedPrice": "$4.99 per month"
+      },
+      {
+        "model": "Transaction fee",
+        "detail": "Partner with Indian grocery delivery services and earn a small commission per order placed from the app",
+        "suggestedPrice": "5% of order value"
+      }
+    ],
+    "goToMarket": [
+      "Partner with Indian cooking influencers on YouTube/Instagram for demo videos",
+      "Launch on Indian app stores with localized language support",
+      "Run targeted ads on Facebook groups focused on Indian homemakers",
+      "Offer a free 30‑day trial to early adopters via Reddit community outreach"
+    ],
+    "risks": [
+      {
+        "risk": "Existing AI recipe generators could add weekly planning features quickly",
+        "severity": "medium",
+        "mitigation": "Build deep regional ingredient database and strong grocery‑list aggregation to stay ahead"
+      },
+      {
+        "risk": "User trust in AI portion‑size recommendations may be low",
+        "severity": "medium",
+        "mitigation": "Include manual adjustment sliders and transparent calorie/portion calculations"
+      },
+      {
+        "risk": "Integration with grocery delivery platforms may face API or partnership hurdles",
+        "severity": "low",
+        "mitigation": "Start with simple CSV export and later negotiate API deals"
+      }
+    ],
+    "evidenceGaps": [
+      "Actual user willingness to pay for a meal‑planning app in India",
+      "Quantitative data on time saved by AI‑generated grocery lists for Indian households",
+      "Accuracy of AI‑predicted portion sizes for diverse Indian dishes"
+    ],
+    "viability": {
+      "demand": 65,
+      "competition": 40,
+      "differentiation": 55,
+      "monetization": 50,
+      "execution": 45,
+      "overall": 53
+    },
+    "verdict": "REFINE",
+    "verdictReason": "Evidence shows clear pain and a growing convenience‑food market, but competition exists and key user‑adoption metrics are unverified, suggesting the concept needs further validation before full build."
+  },
+  "domains": {
+    "candidates": [
+      {
+        "domain": "mealraas.com",
+        "available": true,
+        "price": 48.99,
+        "currency": "USD",
+        "reason": "Brandable name generated from your idea",
+        "premium": false
+      },
+      {
+        "domain": "mealraas.ai",
+        "available": true,
+        "price": 11.99,
+        "currency": "USD",
+        "reason": "Same brand on a startup-friendly TLD",
+        "premium": false
+      },
+      {
+        "domain": "spiceplan.ai",
+        "available": true,
+        "price": 40.99,
+        "currency": "USD",
+        "reason": "Brandable name generated from your idea",
+        "premium": false
+      },
+      {
+        "domain": "spiceplan.app",
+        "available": true,
+        "price": 19.99,
+        "currency": "USD",
+        "reason": "Same brand on a startup-friendly TLD",
+        "premium": false
+      },
+      {
+        "domain": "kitchenmuse.com",
+        "available": true,
+        "price": 18.99,
+        "currency": "USD",
+        "reason": "Brandable name generated from your idea",
+        "premium": false
+      },
+      {
+        "domain": "kitchenmuse.ai",
+        "available": false,
+        "price": null,
+        "currency": "USD",
+        "reason": "Same brand on a startup-friendly TLD",
+        "premium": false
+      },
+      {
+        "domain": "tiffinai.ai",
+        "available": false,
+        "price": null,
+        "currency": "USD",
+        "reason": "Brandable name generated from your idea",
+        "premium": false
+      },
+      {
+        "domain": "tiffinai.app",
+        "available": true,
+        "price": 14.99,
+        "currency": "USD",
+        "reason": "Same brand on a startup-friendly TLD",
+        "premium": false
+      },
+      {
+        "domain": "indianai.com",
+        "available": true,
+        "price": 35.99,
+        "currency": "USD",
+        "reason": "Keyword pair from your category",
+        "premium": false
+      },
+      {
+        "domain": "getmealraas.com",
+        "available": false,
+        "price": null,
+        "currency": "USD",
+        "reason": "Prefix variant, usually easier to get",
+        "premium": false
+      }
+    ],
+    "best": {
+      "domain": "mealraas.com",
+      "available": true,
+      "price": 48.99,
+      "currency": "USD",
+      "reason": "Brandable name generated from your idea",
+      "premium": false
+    },
+    "dataSource": "demo",
+    "notes": [
+      "name.com credentials are not set — availability below is sample data, not a live check."
+    ]
+  },
+  "sources": {
+    "llm": "live",
+    "research": "live",
+    "domains": "demo"
+  },
+  "recordedAt": "2026-08-20T21:48:05.195Z"
+}

@@ -1,0 +1,103 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:100vw;height:100vh;overflow:hidden}
+  body{
+    background:#FAF8F1; color:#0D2A1E;
+    font-family:Inter,system-ui,sans-serif; -webkit-font-smoothing:antialiased;
+    display:flex; position:relative;
+  }
+  /* Real product output, held back so it reads as texture not content. */
+  .register{
+    position:absolute; right:-3%; top:20%; width:48%; opacity:.085;
+    /* Fades on three edges so it never competes with type it sits behind. */
+    -webkit-mask-image:linear-gradient(to left,#000 30%,transparent 92%),
+                       linear-gradient(to bottom,transparent,#000 14%,#000 74%,transparent);
+            mask-image:linear-gradient(to left,#000 30%,transparent 92%),
+                       linear-gradient(to bottom,transparent,#000 14%,#000 74%,transparent);
+    -webkit-mask-composite:source-in; mask-composite:intersect;
+  }
+  .register img{width:100%; display:block}
+
+  /* Keeps the verdict off the texture without drawing a box around it. */
+  .verdict::before{
+    content:""; position:absolute; inset:-8% -14%;
+    background:radial-gradient(closest-side,#FAF8F1 62%,rgba(250,248,241,0) 100%);
+    z-index:-1;
+  }
+
+  .sheet{position:relative; width:100%; height:100%; padding:5.2% 5.6%; display:flex; flex-direction:column}
+
+  .masthead{position:relative; z-index:1; display:flex; align-items:center; justify-content:space-between;
+            border-bottom:2px solid #0C3B2A; padding-bottom:1.5%}
+  .brand{display:flex; align-items:center; gap:14px}
+  .seal{width:44px;height:44px;border-radius:999px;display:grid;place-items:center;
+        background:linear-gradient(135deg,#E0BC55,#C0982A 45%,#7E6212);
+        box-shadow:0 1px 0 rgba(255,255,255,.55) inset}
+  .seal svg{width:21px;height:21px;fill:#06231A}
+  .word{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:30px;letter-spacing:-.02em;color:#0C3B2A;line-height:1}
+  .word span{color:#7E6212}
+  .kicker{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#7C9184;margin-top:5px}
+  .origin{font-size:12px;letter-spacing:.19em;text-transform:uppercase;color:#46614F;text-align:right;line-height:1.7;position:relative;z-index:1}
+
+  .body{flex:1; display:flex; align-items:center; gap:5%}
+  .left{flex:1; min-width:0}
+  .eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#7C9184}
+  h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:76px;line-height:1.0;
+     letter-spacing:-.02em;color:#0C3B2A;margin-top:20px}
+  .sub{font-size:21px;line-height:1.5;color:#46614F;margin-top:26px;max-width:640px;font-weight:300}
+
+  /* The verdict, treated as the product's signature mark. */
+  .verdict{flex:0 0 300px;text-align:center;position:relative;z-index:1}
+  .vlabel{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#7C9184}
+  .score{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:220px;line-height:.8;
+         color:#C0982A;margin-top:14px;letter-spacing:-.03em}
+  .vrule{height:2px;width:120px;background:#C0982A;margin:26px auto 0}
+  .vword{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:30px;letter-spacing:.16em;
+         color:#C0982A;margin-top:18px}
+
+  .foot{display:flex;gap:0;border-top:1px solid #D3CCB2;padding-top:2.2%}
+  .fact{flex:1;padding-right:3%}
+  .fact b{display:block;font-family:Fraunces,Georgia,serif;font-weight:600;font-size:27px;color:#0C3B2A;line-height:1}
+  .fact span{display:block;font-size:13px;color:#46614F;margin-top:9px;line-height:1.4}
+</style></head>
+<body>
+  <div class="register"><img src="register.png" alt=""></div>
+  <div class="sheet">
+
+    <div class="masthead">
+      <div class="brand">
+        <span class="seal"><svg viewBox="0 0 24 24"><path d="M12 2.4c2.9 2.4 4.5 5.8 4.5 9.5v3l1.9 1.9v2.3l-3.2-1.1a4.4 4.4 0 0 1-6.4 0L5.6 19.1v-2.3l1.9-1.9v-3c0-3.7 1.6-7.1 4.5-9.5Zm0 5.4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/></svg></span>
+        <div>
+          <div class="word">Launch<span>Pilot</span></div>
+          <div class="kicker">Startup idea investigations</div>
+        </div>
+      </div>
+      <div class="origin">A Clustral AI product<br>clustralai.com</div>
+    </div>
+
+    <div class="body">
+      <div class="left">
+        <div class="eyebrow">Case file · finding</div>
+        <h1>Don&rsquo;t build it<br>until you validate it.</h1>
+        <div class="sub">One sentence in. It searches the live web, cites every claim to a numbered
+          exhibit, and commits to a verdict &mdash; then hands you the week that follows.</div>
+      </div>
+      <div class="verdict">
+        <div class="vlabel">Viability</div>
+        <div class="score">53</div>
+        <div class="vrule"></div>
+        <div class="vword">REFINE</div>
+      </div>
+    </div>
+
+    <div class="foot">
+      <div class="fact"><b>21</b><span>live exhibits, numbered<br>and linked</span></div>
+      <div class="fact"><b>2</b><span>model calls, six searches,<br>ten seconds</span></div>
+      <div class="fact"><b>57%</b><span>of claims sourced &mdash; it<br>grades itself</span></div>
+      <div class="fact"><b>7</b><span>days of work, drawn<br>from the evidence</span></div>
+    </div>
+
+  </div>
+</body></html>

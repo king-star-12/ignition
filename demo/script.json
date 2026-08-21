@@ -1,0 +1,72 @@
+[
+  {
+    "id": "01",
+    "beat": "card-hook",
+    "text": "So you've had the idea. You've told a few people, and they all said it sounds great. Here's the problem with that. Not one of them had any evidence. They were just being kind."
+  },
+  {
+    "id": "02",
+    "beat": "card-brand",
+    "text": "Clustral builds investigative agents. Things that go and look, and come back holding proof. So we pointed one at the most expensive decision a founder ever makes. Which is deciding to spend a year on the wrong idea. Let me just show you."
+  },
+  {
+    "id": "03",
+    "beat": "typing",
+    "text": "I'll give it a real one. An AI meal planner for Indian families. That's the whole input. One sentence."
+  },
+  {
+    "id": "04",
+    "beat": "click-demo",
+    "text": "Now, I'm playing back a run I recorded earlier, so the numbers hold still while I talk. All of it is real output. And watch what it does first. It writes its own research plan. Notice it hasn't told me a single thing about the market yet. It can't. It hasn't looked."
+  },
+  {
+    "id": "05",
+    "beat": "pipeline",
+    "text": "There. Six searches, all at once. Competitors. Market signals. And the places where people are already complaining. That last one is the bit everybody skips."
+  },
+  {
+    "id": "06",
+    "beat": "verdict",
+    "text": "Fifty three. Refine. And notice what it didn't say. It didn't say great idea. It picked a side, and it put a number on it."
+  },
+  {
+    "id": "07",
+    "beat": "sensitivity",
+    "text": "But my next question would be, fifty three according to who? So look at this. Seventeen points to Build. No single score gets me there on its own. Most of the room left is in competition. And the verdict holds unless demand drops twenty eight points. That isn't a score any more. That's a plan."
+  },
+  {
+    "id": "08",
+    "beat": "exhibits",
+    "text": "And underneath the whole thing, twenty one exhibits. Numbered, like a case file. Every one a link I can open. Let me pull up just what customers said."
+  },
+  {
+    "id": "09",
+    "beat": "field",
+    "text": "Dish Gen. Food Mood. Recipe G P T. And every one of them carries the exhibit it came from. These weren't remembered from training data. They were found. And if the model invents a citation, the server deletes it before it ever reaches my screen."
+  },
+  {
+    "id": "10",
+    "beat": "orders",
+    "text": "Then the part I actually care about. What do I do on Monday? Seven days. The competitor to go and use. The thread to go and read. The domain to go and buy."
+  },
+  {
+    "id": "11",
+    "beat": "record",
+    "text": "And this is the bit that won me over. It marks its own homework, and it marks it harshly. Fifty seven per cent of its claims are sourced. It only leaned on five of its twenty one exhibits. Three things it couldn't establish at all. It could have buried that. It leads with it."
+  },
+  {
+    "id": "12",
+    "beat": "crossexam",
+    "text": "One more thing. Same idea, same evidence. But cross examine it. Question it the way an investor would, right before writing a cheque. Thirty five. Shelve it. Honestly, if it can't tell me no, it isn't worth asking."
+  },
+  {
+    "id": "13",
+    "beat": "brief",
+    "text": "Command K takes me anywhere inside the file, without touching the mouse. And when I'm done, the whole thing comes out as one document. The verdict, the exhibits, the week. Something I can actually hand to a co-founder."
+  },
+  {
+    "id": "14",
+    "beat": "card-close",
+    "text": "Live evidence. A verdict that commits. And a week of work waiting on the other side. LaunchPilot, from Clustral. Don't build it, until you validate it."
+  }
+]
