@@ -61,7 +61,7 @@ export function Landing({
           <Seal className="size-9" />
           <div>
             <div className="lp-display text-[22px] leading-none text-forest">
-              Launch<span className="text-gold-deep">Pilot</span>
+              Ignition
             </div>
             <div className="lp-eyebrow mt-1.5 text-ink-subtle">Startup idea investigations</div>
           </div>
@@ -74,7 +74,7 @@ export function Landing({
           Don&apos;t build it until you validate it.
         </h1>
         <p className="mx-auto mt-5 max-w-xl text-balance text-[15px] leading-relaxed text-ink-muted">
-          Describe your idea. LaunchPilot searches the live web for competitors and real customer
+          Describe your idea. Ignition searches the live web for competitors and real customer
           complaints, checks what you could name it, and returns a case file with a verdict — and
           the receipts behind it.
         </p>

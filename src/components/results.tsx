@@ -106,7 +106,7 @@ export function Results({
       {recordedOn ? (
         <p className="mt-8 border-l-2 border-gold bg-gold-soft/50 px-4 py-3 text-[13px] leading-relaxed text-ink">
           <span className="lp-eyebrow mr-2 text-gold-deep">Recorded run</span>
-          This file was produced by a real LaunchPilot investigation on {recordedOn} and is being
+          This file was produced by a real Ignition investigation on {recordedOn} and is being
           replayed — the searches below were genuinely run then, not just now.
         </p>
       ) : null}

@@ -11,11 +11,11 @@ export async function generateMetadata({
 }: PageProps<"/r/[id]">): Promise<Metadata> {
   const { id } = await params;
   const record = await loadRun(id);
-  if (!record) return { title: "Report not found — LaunchPilot" };
+  if (!record) return { title: "Report not found — Ignition" };
 
   const { synthesis, analysis } = record.run;
   return {
-    title: `${synthesis.verdict} · ${synthesis.viability.overall}/100 — LaunchPilot`,
+    title: `${synthesis.verdict} · ${synthesis.viability.overall}/100 — Ignition`,
     description: `${analysis.idea} — ${synthesis.verdictReason}`,
   };
 }

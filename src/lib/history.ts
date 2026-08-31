@@ -8,7 +8,7 @@ import type { ValidationRun } from "@/lib/analysis/schemas";
  * leaves the browser beyond the run the server already produced.
  */
 
-const KEY = "launchpilot.history.v1";
+const KEY = "ignition.history.v1";
 const LIMIT = 12;
 const EMPTY: HistoryEntry[] = [];
 

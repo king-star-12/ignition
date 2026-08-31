@@ -10,7 +10,7 @@ import json, os, subprocess
 HERE = os.path.dirname(os.path.abspath(__file__))
 VOICE = os.environ.get("KVOICE", "am_michael")
 SESSION = os.path.join(HERE, "session.webm")
-OUT = os.path.join(HERE, "launchpilot-demo.mp4")
+OUT = os.path.join(HERE, "ignition-demo.mp4")
 
 beats = json.load(open(os.path.join(HERE, "beats.json")))
 segments = json.load(open(os.path.join(HERE, "script.json")))

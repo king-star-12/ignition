@@ -33,7 +33,7 @@ export function buildLaunchBrief(run: ValidationRun, generatedAt: string): Launc
     }`,
     "",
   );
-  push(`_Filed by LaunchPilot on ${generatedAt}._`, "");
+  push(`_Filed by Ignition on ${generatedAt}._`, "");
 
   const demoParts = [
     sources.llm === "demo" ? "analysis" : null,

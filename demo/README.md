@@ -1,6 +1,6 @@
 # The demo film
 
-`LaunchPilot-demo.mp4` — 2:59, 1920×1080, H.264/AAC. Narrated by `af_heart` (Kokoro).
+`Ignition-demo.mp4` — 2:59, 1920×1080, H.264/AAC. Narrated by `af_heart` (Kokoro).
 
 **It is a screen recording, not a slideshow.** One continuous browser session. The idea is
 typed in character by character, the pipeline animates, the score counts up from zero, the
@@ -78,7 +78,7 @@ exactly the failure this product exists to prevent.
 No track is bundled; none is licensed.
 
 ```bash
-ffmpeg -i LaunchPilot-demo.mp4 -i bed.mp3 -filter_complex \
+ffmpeg -i Ignition-demo.mp4 -i bed.mp3 -filter_complex \
   "[1:a]volume=0.08,afade=t=out:st=174:d=6[m];[0:a][m]amix=inputs=2:duration=first" \
-  -c:v copy -c:a aac -b:a 192k LaunchPilot-demo-music.mp4
+  -c:v copy -c:a aac -b:a 192k Ignition-demo-music.mp4
 ```

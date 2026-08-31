@@ -1,4 +1,4 @@
-# LaunchPilot — 2-minute demo script
+# Ignition — 2-minute demo script
 
 ## Before you start
 
@@ -155,7 +155,7 @@ Then click **Generate Launch Brief**.
 
 Final line:
 
-> "LaunchPilot turns one sentence into live market evidence, a defensible decision, a domain
+> "Ignition turns one sentence into live market evidence, a defensible decision, a domain
 > you can register, and a launch plan. Don't build it until you validate it."
 
 ---

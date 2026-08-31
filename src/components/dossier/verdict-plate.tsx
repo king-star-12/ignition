@@ -170,7 +170,7 @@ function ScoreLedger({
             ) : null}
           </p>
         ) : (
-          <p>This is already the strongest verdict LaunchPilot gives.</p>
+          <p>This is already the strongest verdict Ignition gives.</p>
         )}
         {insight.fragility ? (
           <p>

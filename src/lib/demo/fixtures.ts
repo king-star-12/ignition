@@ -19,7 +19,7 @@ import { reconcile } from "@/lib/analysis/scoring";
 export { DEMO_IDEA } from "@/lib/constants";
 
 const SAMPLE_NOTE =
-  "Sample evidence shown because LaunchPilot is running without live search. The link is real; the summary is illustrative.";
+  "Sample evidence shown because Ignition is running without live search. The link is real; the summary is illustrative.";
 
 function isMealPlannerIdea(idea: string): boolean {
   const text = idea.toLowerCase();
@@ -456,7 +456,7 @@ export function demoSynthesis(
       },
     ],
     evidenceGaps: [
-      "No market-size figure was verified — LaunchPilot is showing sample evidence.",
+      "No market-size figure was verified — Ignition is showing sample evidence.",
       "No competitor pricing was confirmed from a source.",
       "No direct evidence of willingness to pay in the target segment.",
     ],

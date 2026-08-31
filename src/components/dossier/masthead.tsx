@@ -23,7 +23,7 @@ export function Masthead({
           <Seal className="size-9" />
           <div>
             <div className="lp-display text-[22px] leading-none text-forest">
-              Launch<span className="text-gold-deep">Pilot</span>
+              Ignition
             </div>
             <div className="lp-eyebrow mt-1.5 text-ink-subtle">
               {mode === "scrutiny" ? "Case file · cross-examined" : "Case file"}

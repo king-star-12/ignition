@@ -48,7 +48,7 @@ export function BriefDialog({ run }: { run: ValidationRun }) {
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
-    link.download = "launchpilot-brief.md";
+    link.download = "ignition-brief.md";
     link.click();
     URL.revokeObjectURL(url);
   };

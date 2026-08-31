@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="demo/thumbnail/launchpilot-thumbnail-16x9.png" alt="LaunchPilot — don't build it until you validate it" width="820">
+  <img src="demo/thumbnail/ignition-thumbnail-16x9.png" alt="Ignition — don't build it until you validate it" width="820">
 </p>
 
-# LaunchPilot
+# Ignition
 
 **Don't build it until you validate it.** A [Clustral AI](https://clustralai.com) product.
 
-Give LaunchPilot a startup idea. It researches the live web for competitors and real
+Give Ignition a startup idea. It researches the live web for competitors and real
 customer pain, checks what you could name it, scores the opportunity across five dimensions,
 returns a BUILD / REFINE / KILL verdict — and then tells you what to do for the next seven days.
 
@@ -81,7 +81,7 @@ is about **41 live runs a month**. Three things stretch that a long way:
 
 ### Search providers
 
-LaunchPilot tries providers in order and switches automatically, saying so in the UI:
+Ignition tries providers in order and switches automatically, saying so in the UI:
 
 | Provider | Free allowance | Notes |
 | --- | --- | --- |

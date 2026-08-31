@@ -115,7 +115,7 @@ export function buildActionPlan(run: ValidationRun): ActionPlan {
           ? domains.best.price !== null
             ? `It was available at $${domains.best.price.toFixed(2)} when this ran. The cheapest irreversible step you can take, and it stops the name disappearing while you deliberate.`
             : "It was available when this ran. The cheapest irreversible step you can take."
-          : "LaunchPilot is showing sample availability for this run, so treat the status above as a suggestion, not a fact. Confirm it with a registrar, then buy it — it is the cheapest irreversible step you can take.",
+          : "Ignition is showing sample availability for this run, so treat the status above as a suggestion, not a fact. Confirm it with a registrar, then buy it — it is the cheapest irreversible step you can take.",
       });
     }
 

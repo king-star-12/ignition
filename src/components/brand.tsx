@@ -16,7 +16,7 @@ export function Logo({
           onDark ? "text-paper" : "text-forest",
         )}
       >
-        Launch<span className="text-gold-deep">Pilot</span>
+        Ignition
       </span>
     </span>
   );

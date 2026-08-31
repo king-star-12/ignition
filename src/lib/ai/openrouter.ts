@@ -15,8 +15,8 @@ export function createOpenRouterProvider(): LlmProvider {
     // OpenRouter's free router may land on a model without JSON mode.
     supportsJsonMode: false,
     extraHeaders: {
-      "HTTP-Referer": "https://launchpilot.local",
-      "X-Title": "LaunchPilot",
+      "HTTP-Referer": "https://ignition.local",
+      "X-Title": "Ignition",
     },
   });
 }

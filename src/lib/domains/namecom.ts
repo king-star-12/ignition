@@ -136,11 +136,11 @@ export async function probeNamecom(): Promise<
     return { ok: false, error: "NAMECOM_API_KEY and NAMECOM_USERNAME are not both set" };
   }
   try {
-    const results = await checkAvailability(["launchpilot-probe-check.com"]);
-    const entry = results.get("launchpilot-probe-check.com");
+    const results = await checkAvailability(["ignition-probe-check.com"]);
+    const entry = results.get("ignition-probe-check.com");
     return {
       ok: true,
-      checked: "launchpilot-probe-check.com",
+      checked: "ignition-probe-check.com",
       available: entry?.purchasable ?? null,
     };
   } catch (error) {

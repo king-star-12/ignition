@@ -20,9 +20,9 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "LaunchPilot — Don't build it until you validate it.",
+  title: "Ignition — Don't build it until you validate it.",
   description:
-    "LaunchPilot researches the live web for competitors and customer pain, checks domains, scores the opportunity and generates a launch-ready brief.",
+    "Ignition researches the live web for competitors and customer pain, checks domains, scores the opportunity and generates a launch-ready brief.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

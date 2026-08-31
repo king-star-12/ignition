@@ -12,7 +12,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import puppeteer from "/Users/dhrumiljoshi96/Documents/Hackathons/Devnetwork/launchpilot/node_modules/puppeteer-core/lib/puppeteer/puppeteer-core.js";
+import puppeteer from "/Users/dhrumiljoshi96/Documents/Hackathons/Devnetwork/ignition/node_modules/puppeteer-core/lib/puppeteer/puppeteer-core.js";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const CHROME =

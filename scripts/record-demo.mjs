@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Records one real LaunchPilot investigation and freezes it as the demo.
+ * Records one real Ignition investigation and freezes it as the demo.
  *
  * The demo button replays this file instead of calling any external API, so a
  * flaky venue network, an exhausted search quota or a rate-limited model can

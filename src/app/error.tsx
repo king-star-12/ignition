@@ -18,7 +18,7 @@ export default function Error({
   reset: () => void;
 }) {
   useEffect(() => {
-    console.error("[launchpilot] render error", error);
+    console.error("[ignition] render error", error);
   }, [error]);
 
   return (

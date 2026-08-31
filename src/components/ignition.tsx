@@ -16,7 +16,7 @@ import {
 } from "@/lib/history";
 import type { ValidationRun } from "@/lib/analysis/schemas";
 
-export function LaunchPilot({ config }: { config: AppConfig }) {
+export function Ignition({ config }: { config: AppConfig }) {
   const history = useSyncExternalStore(
     subscribeHistory,
     getHistorySnapshot,
