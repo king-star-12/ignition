@@ -49,3 +49,5 @@ next-env.d.ts
 demo/frames/
 demo/clips/
 demo/audio/
+demo/session.webm
+demo/samples/
