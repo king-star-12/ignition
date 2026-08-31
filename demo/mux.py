@@ -7,12 +7,13 @@ the voice cannot drift from the picture no matter how long a page took to load.
 """
 import json, os, subprocess
 
+import sys
+
 HERE = os.path.dirname(os.path.abspath(__file__))
+SESSION_ARG = sys.argv[1] if len(sys.argv) > 1 else None
+OUT = sys.argv[2] if len(sys.argv) > 2 else os.path.join(HERE, "demo.mp4")
 VOICE = os.environ.get("KVOICE", "am_michael")
 SESSION = SESSION_ARG or os.path.join(HERE, "session.webm")
-import sys
-SESSION_ARG = sys.argv[1] if len(sys.argv) > 1 else None
-OUT = sys.argv[2] if len(sys.argv) > 2 else os.path.join(HERE, "ignition-demo.mp4")
 
 beats = json.load(open(os.path.join(HERE, "beats.json")))
 segments = json.load(open(os.path.join(HERE, "script.json")))

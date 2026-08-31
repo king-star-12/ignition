@@ -1,13 +1,13 @@
 /** Shared between the demo fixtures and the landing page's "Run demo" button. */
 export const DEMO_IDEA =
-  "I want to build an AI meal planner for Indian families that plans a week of home-cooked meals, respects vegetarian and regional preferences, and generates a grocery list.";
+  "A booking platform for small satellite operators to compare and reserve rideshare slots on SpaceX Transporter, Rocket Lab, and Isar Aerospace with live pricing and integration deadlines";
 
 /** Capture date of src/lib/demo/recorded-run.json, shown on the demo button. */
-export const RECORDED_ON = "20 August 2026";
+export const RECORDED_ON = "31 August 2026";
 
 export const EXAMPLE_IDEAS = [
   {
-    label: "AI meal planner for Indian families",
+    label: "Rideshare booking for smallsat operators",
     idea: DEMO_IDEA,
   },
   {

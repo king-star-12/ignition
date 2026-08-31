@@ -258,7 +258,7 @@ try {
     await page.mouse.click(box.x, box.y);
     await page.evaluate(() => window.__cursor.ripple());
     await page.keyboard.type(
-      "An AI meal planner for Indian families that plans a week of home-cooked meals and builds the grocery list.",
+      "A booking platform for small satellite operators to compare and reserve rideshare slots on SpaceX, Rocket Lab and Isar Aerospace.",
       { delay: 26 },
     );
   });

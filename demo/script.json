@@ -2,67 +2,67 @@
   {
     "id": "01",
     "beat": "card-hook",
-    "text": "So you've had the idea. You've told a few people, and they all said it sounds great. Here's the problem with that. Not one of them had any evidence. They were just being kind."
+    "text": "Here's an idea worth real money if it's right. Small satellite operators can't easily find spare capacity on rockets that are already flying. So build the marketplace, take a cut. Everyone you pitch it to will say it sounds great. None of them will have looked."
   },
   {
     "id": "02",
     "beat": "card-brand",
-    "text": "Clustral builds investigative agents. Things that go and look, and come back holding proof. So we pointed one at the most expensive decision a founder ever makes. Which is deciding to spend a year on the wrong idea. Let me just show you."
+    "text": "Clustral builds investigative agents. Things that go and look, then come back holding proof. This is Ignition, and it points that at the most expensive decision a founder ever makes. Committing a year to the wrong idea."
   },
   {
     "id": "03",
     "beat": "typing",
-    "text": "I'll give it a real one. An AI meal planner for Indian families. That's the whole input. One sentence."
+    "text": "So. One sentence. A booking platform for smallsat operators, to compare and reserve rideshare slots across SpaceX, Rocket Lab and Isar Aerospace."
   },
   {
     "id": "04",
     "beat": "click-demo",
-    "text": "Now, I'm playing back a run I recorded earlier, so the numbers hold still while I talk. All of it is real output. And watch what it does first. It writes its own research plan. Notice it hasn't told me a single thing about the market yet. It can't. It hasn't looked."
+    "text": "I'm replaying a recorded run, so the numbers hold still while I talk. All of it is real output. And watch what it does first. It writes its own research plan, without saying a word about the market. It can't. It hasn't looked."
   },
   {
     "id": "05",
     "beat": "pipeline",
-    "text": "There. Six searches, all at once. Competitors. Market signals. And the places where people are already complaining. That last one is the bit everybody skips."
+    "text": "There. Six searches at once. Who is already doing this. What the market is worth. And where operators are complaining."
   },
   {
     "id": "06",
     "beat": "verdict",
-    "text": "Fifty three. Refine. And notice what it didn't say. It didn't say great idea. It picked a side, and it put a number on it."
+    "text": "Fifty four. Refine. And notice what it didn't say. It didn't say great idea. It picked a side, and it put a number on it."
   },
   {
     "id": "07",
     "beat": "sensitivity",
-    "text": "But my next question would be, fifty three according to who? So look at this. Seventeen points to Build. No single score gets me there on its own. Most of the room left is in competition. And the verdict holds unless demand drops twenty eight points. That isn't a score any more. That's a plan."
+    "text": "My next question is, fifty four according to what? Sixteen points from Build. No single score gets there on its own. The most room left is in demand. And the verdict holds unless demand drops thirty one points. That stops being a score and starts being a brief."
   },
   {
     "id": "08",
     "beat": "exhibits",
-    "text": "And underneath the whole thing, twenty one exhibits. Numbered, like a case file. Every one a link I can open. Let me pull up just what customers said."
+    "text": "Underneath it, twenty one exhibits. Numbered, like a case file. Every one of them a link I can open. Let me pull up just what the operators said."
   },
   {
     "id": "09",
     "beat": "field",
-    "text": "Dish Gen. Food Mood. Recipe G P T. And every one of them carries the exhibit it came from. These weren't remembered from training data. They were found. And if the model invents a citation, the server deletes it before it ever reaches my screen."
+    "text": "And here's the finding I'd want. SpaceX already runs its own smallsat rideshare programme. SEOPS already sells the booking. Both carry the exhibit they came from. That's the honest answer to, is anyone doing this. And it isn't the one I wanted."
   },
   {
     "id": "10",
     "beat": "orders",
-    "text": "Then the part I actually care about. What do I do on Monday? Seven days. The competitor to go and use. The thread to go and read. The domain to go and buy."
+    "text": "Then it hands me the week. Seven days, drawn entirely from this file. The competitor to go and use. The thread to go and read. And what to build first, which is an aggregated slot catalogue and nothing else."
   },
   {
     "id": "11",
     "beat": "record",
-    "text": "And this is the bit that won me over. It marks its own homework, and it marks it harshly. Fifty seven per cent of its claims are sourced. It only leaned on five of its twenty one exhibits. Three things it couldn't establish at all. It could have buried that. It leads with it."
+    "text": "This is what won me over. It marks its own homework. Every claim is sourced, but it leaned on only six of its twenty one exhibits, and lists three things it couldn't establish. It even flags that I gave it no domain key, so the names it suggests are labelled unverified."
   },
   {
     "id": "12",
     "beat": "crossexam",
-    "text": "One more thing. Same idea, same evidence. But cross examine it. Question it the way an investor would, right before writing a cheque. Thirty five. Shelve it. Honestly, if it can't tell me no, it isn't worth asking."
+    "text": "Now watch. Same idea, cross examined. Questioned the way an investor would before writing a cheque. And it went up. Sixty five. Looking for reasons this fails, it found a growing market, not a saturated one. A tool that only confirms your fears is as useless as one that only confirms your hopes."
   },
   {
     "id": "13",
     "beat": "brief",
-    "text": "Command K takes me anywhere inside the file, without touching the mouse. And when I'm done, the whole thing comes out as one document. The verdict, the exhibits, the week. Something I can actually hand to a co-founder."
+    "text": "Command K takes me anywhere in the file. And the whole thing exports as one document. Verdict, exhibits, the week. Something I can hand to a co-founder."
   },
   {
     "id": "14",

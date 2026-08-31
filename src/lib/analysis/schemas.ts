@@ -16,7 +16,32 @@ export type ResearchCategory = z.infer<typeof ResearchCategorySchema>;
 
 const nonEmpty = z.string().trim().min(1);
 const score = z.coerce.number().min(0).max(100).catch(50);
-const stringList = z.array(nonEmpty).default([]);
+/**
+ * Models occasionally return a "list of strings" as a list of arrays or of
+ * little objects. The content is usually fine — only the shape is wrong — so
+ * flatten it rather than failing the whole analysis over presentation.
+ */
+function flattenToText(value: unknown): string[] {
+  if (typeof value === "string") return [value];
+  if (Array.isArray(value)) return value.flatMap(flattenToText);
+  if (value && typeof value === "object") {
+    const record = value as Record<string, unknown>;
+    // Prefer a field that reads like the sentence the model meant to write.
+    for (const key of ["text", "detail", "description", "item", "channel", "step", "name"]) {
+      if (typeof record[key] === "string") return [record[key] as string];
+    }
+    const first = Object.values(record).find((entry) => typeof entry === "string");
+    return typeof first === "string" ? [first] : [];
+  }
+  return [];
+}
+
+const stringList = z
+  .preprocess(
+    (value) => (Array.isArray(value) ? flattenToText(value) : value),
+    z.array(nonEmpty),
+  )
+  .default([]);
 
 /* ------------------------------------------------------------------ */
 /* Stage 1 — structured understanding of the raw idea                  */

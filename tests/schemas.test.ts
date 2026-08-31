@@ -124,3 +124,48 @@ describe("ResearchEvidenceSchema", () => {
     expect(result.success).toBe(false);
   });
 });
+
+describe("loose list shapes from real models", () => {
+  const base = {
+    executiveSummary: "Summary.",
+    problem: { statement: "Problem." },
+    viability: {
+      demand: 70, competition: 50, differentiation: 60,
+      monetization: 55, execution: 50, overall: 60,
+    },
+    verdict: "BUILD",
+    verdictReason: "Because.",
+  };
+
+  it("flattens a list that came back nested", () => {
+    const parsed = ViabilityAnalysisSchema.parse({
+      ...base,
+      goToMarket: ["Direct sales", ["Conferences", "Trade press"], "Partnerships"],
+    });
+    expect(parsed.goToMarket).toEqual([
+      "Direct sales", "Conferences", "Trade press", "Partnerships",
+    ]);
+  });
+
+  it("pulls the sentence out of objects the model wrapped", () => {
+    const parsed = ViabilityAnalysisSchema.parse({
+      ...base,
+      goToMarket: [{ channel: "Launch brokers" }, { text: "Industry newsletters" }],
+    });
+    expect(parsed.goToMarket).toEqual(["Launch brokers", "Industry newsletters"]);
+  });
+
+  it("drops entries with nothing usable in them rather than failing", () => {
+    const parsed = ViabilityAnalysisSchema.parse({
+      ...base,
+      opportunities: ["Real one", {}, [], 42],
+    });
+    expect(parsed.opportunities).toEqual(["Real one"]);
+  });
+
+  it("still rejects a list that is not a list at all", () => {
+    expect(
+      ViabilityAnalysisSchema.safeParse({ ...base, goToMarket: "not a list" }).success,
+    ).toBe(false);
+  });
+});

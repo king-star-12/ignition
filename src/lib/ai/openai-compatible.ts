@@ -21,7 +21,7 @@ type ClientConfig = {
 
 const DEFAULT_TIMEOUT_MS = 45_000;
 const MIN_COMPLETION_TOKENS = 1_500;
-const MAX_RETRY_WAIT_SECONDS = 12;
+const MAX_RETRY_WAIT_SECONDS = 25;
 
 /**
  * Groq and OpenRouter both speak the OpenAI chat-completions dialect, so one
@@ -94,7 +94,11 @@ export function createOpenAICompatibleProvider(config: ClientConfig): LlmProvide
 
       // A short per-minute window is worth waiting out once.
       if (response.status === 429 && attempt < 1) {
-        const waitSeconds = Number(response.headers.get("retry-after") ?? "0");
+        // Groq puts the wait in the body when it omits the header.
+        const fromBody = detail.match(/try again in ([\d.]+)s/i);
+        const waitSeconds =
+          Number(response.headers.get("retry-after") ?? "0") ||
+          (fromBody ? Math.ceil(Number(fromBody[1])) + 1 : 0);
         if (waitSeconds > 0 && waitSeconds <= MAX_RETRY_WAIT_SECONDS) {
           await new Promise((resolve) => setTimeout(resolve, waitSeconds * 1000));
           return chat(messages, options, attempt + 1);
