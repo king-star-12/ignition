@@ -1,0 +1,15 @@
+node_modules
+.next
+.git
+.data
+.env*
+!.env.example
+demo/session.webm
+demo/audio
+demo/frames
+demo/clips
+demo/samples
+demo/tts-venv
+*.mp4
+*.wav
+*.webm

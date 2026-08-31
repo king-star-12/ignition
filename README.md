@@ -6,6 +6,8 @@
 
 **Don't build it until you validate it.** A [Clustral AI](https://clustralai.com) product.
 
+**Live: [ignition.clustralai.com](https://ignition.clustralai.com)**
+
 Give Ignition a startup idea. It researches the live web for competitors and real
 customer pain, checks what you could name it, scores the opportunity across five dimensions,
 returns a BUILD / REFINE / KILL verdict — and then tells you what to do for the next seven days.
@@ -24,6 +26,22 @@ Every factual claim on the dashboard carries the source URL it came from.
 submission. It is a real screen recording of the app, not a slideshow.
 
 ---
+
+## Deployment
+
+Runs as a container on Azure Container Apps (`clustral-rg` / `clustral-cae`, centralindia).
+The image is a Next.js standalone build — see `Dockerfile`.
+
+```bash
+az acr build --registry clustralacr2f586ec5 --image ignition:vN --image ignition:latest .
+az containerapp update -n launchpilot -g clustral-rg \
+  --image clustralacr2f586ec5.azurecr.io/ignition:vN
+```
+
+Keys live as Container App secrets (`groq-api-key`, `serpapi-api-key`) referenced by env
+vars, never in the image or this repo. Saved reports are written to `.data/` inside the
+container, which is ephemeral — the store falls back to memory, so share links survive a
+session but not a restart. Point `lib/store.ts` at Redis or Postgres if they need to persist.
 
 ## Quick start
 
